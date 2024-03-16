@@ -34,7 +34,7 @@ mkdir -p build/src
 
 if [[ ! -f "build/src/$FIREFOX_PRODUCT.tar.bz2" ]]; then
     echo "==> Downloading $FIREFOX_PRODUCT"
-    wget "https://download.mozilla.org/?product=$FIREFOX_PRODUCT-latest-ssl&os=$FIREFOX_OS&lang=$FIREFOX_LANG" -O "build/src/$FIREFOX_PRODUCT.tar.bz2" 
+    wget "https://ftp.mozilla.org/pub/firefox/releases/84.0.2/linux-x86_64/en-US/firefox-84.0.2.tar.bz2" -O "build/src/$FIREFOX_PRODUCT.tar.bz2" 
 fi
 
 tar -xvf "build/src/$FIREFOX_PRODUCT.tar.bz2" -C build
